@@ -1,15 +1,15 @@
-# [eggplanet/nuxt](https://hub.docker.com/r/eggplanet/nuxt/)
+# [nuxt-node10](https://hub.docker.com/r/dockterdapper/nuxt-node10/)
 
-![pull badge](https://img.shields.io/docker/pulls/eggplanet/nuxt.svg)
+![pull badge](https://img.shields.io/docker/pulls/dockterdapper/nuxt-node10.svg)
 
-The lightest nuxt image out there.
+The lightest nuxt image out there. (Now with node 10!)
 
 ## Usage
 
 Add the following to your `Dockerfile` in your nuxt project:
 
 ```
-FROM eggplanet/nuxt
+FROM dockterdapper/nuxt
 ```
 
 ## Customize before build
@@ -17,7 +17,7 @@ FROM eggplanet/nuxt
 If you need to customize your project before the nuxt build you can use `--build-arg autobuild=no`. Dont forget to call nuxt build yourself:
 
 ```
-FROM eggplanet/nuxt
+FROM dockterdapper/nuxt
 
 # replace something in nuxt.config.js
 RUN sed -i -e 's/apiserver\.dev/apiserver.production/g' nuxt.config.js
