@@ -1,5 +1,5 @@
-FROM node:8-alpine
-LABEL MAINTAINER="briangonzalez"
+FROM node:10-alpine
+LABEL MAINTAINER="briangonzalez squaredlabs"
 LABEL version="1.1"
 
 # Create app directory
