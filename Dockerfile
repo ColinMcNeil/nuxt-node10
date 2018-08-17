@@ -17,7 +17,6 @@ ONBUILD ENV autobuild ${autobuild}
 
 ONBUILD COPY . /app
 ONBUILD WORKDIR /app
-ONBUILD RUN cd ./server && npm install
 ONBUILD RUN npm install
 ONBUILD WORKDIR /app
 
